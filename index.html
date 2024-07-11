@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="styleSheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <title>Assignments</title>
+</head>
+<body>
+  
+  <div id = "firstPage">
+    <div id = "icon">
+      <img src="iist.jpg">
+    </div>
+    <div id = "box">
+      <div id = "discription">
+      <h3>Welcome to the <span >ASSIGNMENTS</span> Book </h3>
+      <p>The personal assignment book is ultimate tool for staying organized and productive. It's designed to help you achive academic success and personal growth </p>
+      <button class="equal" id="btn1"> Assignments </button>
+      </div>
+
+  </div>
+  </div>
+
+  <!-- 2nd pages start here -->
+  <div id = "SecondPage">
+
+    <div id = "icons">
+      <i class="ri-arrow-go-back-line" id = "bck"></i>
+      <h3>Hello! World</h3>
+      <i class="ri-user-3-line"></i>
+    </div>
+    <div id = "screen">
+
+        <!-- Projects Here -->
+         <!-- -------CalCulator------- -->
+         <div class="calculator">
+          <input type="text" id="result" disabled>
+          <div class="buttons">
+              <button onclick="clearDisplay()">C</button>
+              <button onclick="deleteLast()">DEL</button>
+              <button onclick="appendValue('%')">%</button>
+              <button onclick="appendValue('/')">/</button>
+              <button onclick="appendValue('7')">7</button>
+              <button onclick="appendValue('8')">8</button>
+              <button onclick="appendValue('9')">9</button>
+              <button onclick="appendValue('*')">*</button>
+              <button onclick="appendValue('4')">4</button>
+              <button onclick="appendValue('5')">5</button>
+              <button onclick="appendValue('6')">6</button>
+              <button onclick="appendValue('-')">-</button>
+              <button onclick="appendValue('1')">1</button>
+              <button onclick="appendValue('2')">2</button>
+              <button onclick="appendValue('3')">3</button>
+              <button onclick="appendValue('+')">+</button>
+              <button onclick="appendValue('0')">0</button>
+              <button onclick="appendValue('.')">.</button>
+              <button class="equal" onclick="calculateResult()">=</button>
+          </div>
+      </div>
+
+
+      <!-- -----MCQ QUESTIONS----- -->
+
+      <div class="mcq-book">
+        <h1>MCQ Book</h1>
+        <div id="questions"></div>
+        <div id="btt" onclick="evaluateAnswers()">Submit</div>
+        <div id="result1"></div>
+    </div>
+
+
+
+
+       <!-- CURRENCY CHANGER -->
+
+    <div class="calculator">
+      <h2>Currency Convertor</h2>
+      <input type="number">
+      <div>
+        <select>
+          <option value=""></option>
+        </select> 
+        <span>TO</span>
+        <h5>INR</h5>>
+      </div>
+
+      
+    </div>
+
+
+    <script src="main.js"></script>   
+</body>
+
+</html>
