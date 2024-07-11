@@ -109,3 +109,33 @@ function evaluateAnswers() {
   const resultDiv = document.getElementById("result1");
   resultDiv.innerHTML = `You scored ${score} out of ${questions.length}`;
 }
+
+
+
+
+
+
+// currency convertor
+
+const exchangeRates = {
+  USD: 83.56,
+  EUR: 90.63,
+  GBP: 107.63,
+  JPY: 0.52,
+  AUD: 56.47
+};
+
+function convert() {
+  const inrAmount = document.getElementById('inr').value;
+  const selectedCurrency = document.getElementById('currency').value;
+  const resultElement = document.getElementById('result2');
+
+  if (inrAmount === "") {
+      resultElement.textContent = "Please enter an amount in INR.";
+      return;
+  }
+
+  const convertedAmount = inrAmount * exchangeRates[selectedCurrency];
+  resultElement.textContent = `${inrAmount} ${selectedCurrency} = ${convertedAmount.toFixed(2)} INR`;
+}
+

@@ -161,6 +161,7 @@ button:hover {
 
 
 .mcq-book {
+  width: 100%;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -210,3 +211,27 @@ button:hover {
   font-size: 18px;
   text-align: center;
 }
+
+
+
+/* currency conertor */
+.converter {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#inr, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+

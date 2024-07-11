@@ -78,16 +78,19 @@
 
        <!-- CURRENCY CHANGER -->
 
-    <div class="calculator">
-      <h2>Currency Convertor</h2>
-      <input type="number">
-      <div>
-        <select>
-          <option value=""></option>
-        </select> 
-        <span>TO</span>
-        <h5>INR</h5>>
-      </div>
+       <div class="converter">
+        <h1>INR Currency Converter</h1>
+        <input type="number" id="inr" placeholder="Enter amount in INR">
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <button id="btt" onclick="convert()">Convert</button>
+        <p id="result2"></p>
+    </div>
 
       
     </div>
